@@ -30,7 +30,7 @@ module Challenger
   end
 
   get "/auth/login" do |env|
-    env.redirect "https://[YOUR_DOMAIN].auth0.com/login?client=[CLIENT_ID]"
+    env.redirect "https://[YOUR_DOMAIN].auth0.com/authorize?client=[CLIENT_ID]"
   end
 
   get "/auth/callback" do |env|
